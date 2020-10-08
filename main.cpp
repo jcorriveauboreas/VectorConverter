@@ -1,0 +1,45 @@
+#include "mainwindow.h"
+
+#include <QApplication>
+
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.setWindowTitle("WGL Converter V1.8");
+    w.show();
+    return a.exec();
+}
+//========================================================================================================================
+//
+//  V1.3    19-03-20    -- Bug de lecture de la section Pattern sur 2 ligne, foit trouver ')'
+//                      -- Ajout de variable pour garder le dernier directory
+//  V1.4    27-03-20    -- Doit faire l'inversion du data de chaine pour matcher la scan chain
+//
+//  V1.5    31-03-20    -- Ajout la fonction pour séparer le fichier de sortie si plus grand que 9.5M
+//  V1.6    23-04-20    -- Ajout d'un check box pour activer le split ou non. Le split ne devrait plus ëtre requis , Digilent a fait un fix dans WaveForm
+//  V1.7    27-06-20    -- Ajout du support des inverseurs dans la scanchain. Scanstate represente le scancell data et il faut le transformer en shift data
+//  V1.8    10-07-20    -- Fix un bug dans la gestion des inverseurs
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//========================================================================================================================
